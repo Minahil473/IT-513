@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <script>
+    function calculateScore() {
+      const rangeValue = document.getElementById("range").value;
+      const numberValue = document.getElementById("number").value;
+      const total = parseInt(rangeValue) + parseInt(numberValue);
+      document.getElementById("result").value = total;
+    }
+  </script>
+</head>
+<body>
+  <h1>User Survey</h1>
+
+  <form>
+    <p>
+      <label>Name: <input type="text" name="name" required></label>
+    </p>
+
+    <p>
+      <label>Age: <input type="number" id="number" name="age" value="0" min="0" max="100" oninput="calculateScore()"></label>
+    </p>
+
+    <p>
+      <label>Email: <input type="email" name="email"></label>
+    </p>
+
+    <p>
+      <label>Password: <input type="password" name="password"></label>
+    </p>
+
+    <p>
+      <label>Choose a color: <input type="color" name="color"></label>
+    </p>
+
+    <p>
+      <label>Rate Us (0–10): 
+        <input type="range" id="range" min="0" max="10" value="5" oninput="calculateScore()">
+      </label>
+    </p>
+
+    <p>
+      Satisfaction: 
+      <meter value="7" min="0" max="10">7 out of 10</meter>
+    </p>
+
+    <p>
+      Survey Progress: 
+      <progress value="60" max="100">60%</progress>
+    </p>
+
+    <p>
+      Calculated Score: 
+      <output id="result">0</output>
+    </p>
+
+    <p>
+      <button type="submit">Submit Survey</button>
+    </p>
+  </form>
+</body>
+</html>

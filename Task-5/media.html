@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Example</title>
+</head>
+<body>
+  <h1>Media Elements</h1>
+
+  <!-- Audio -->
+  <h2>Audio Player</h2>
+  <audio controls>
+    <source src="media/sample-audio.mp3" type="audio/mpeg">
+    <source src="media/sample-audio.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Video -->
+  <h2>Video Player</h2>
+  <video controls width="500">
+    <source src="media/sample-video.mp4" type="video/mp4">
+    <source src="media/sample-video.webm" type="video/webm">
+    <track src="media/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support the video element.
+  </video>
+
+  <!-- Optional: Image Map -->
+  <h2>Interactive Image Map</h2>
+  <img src="images/world-map.jpg" alt="World map" usemap="#worldmap" width="500">
+
+  <map name="worldmap">
+    <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/Europe" target="_blank" alt="Europe">
+    <area shape="rect" coords="200,200,300,300" href="https://en.wikipedia.org/wiki/Asia" target="_blank" alt="Asia">
+  </map>
+</body>
+</html>

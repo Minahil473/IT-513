@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Dialog</title>
+ 
+</head>
+<body>
+  <h1>Welcome Page</h1>
+
+  <button onclick="openDialog()">Open Welcome Dialog</button>
+
+  <dialog id="welcomeDialog">
+    <form method="dialog">
+      <h2>Welcome!</h2>
+      <p>We’re glad to have you here. Please enjoy exploring our website.</p>
+      <menu>
+        <button value="close">Close</button>
+      </menu>
+    </form>
+  </dialog>
+ <script>
+    function openDialog() {
+      document.getElementById("welcomeDialog").showModal();
+    }
+  </script>
+</body>
+</html>

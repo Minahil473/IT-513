@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    colgroup col:first-child {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weekly Class Timetable</h1>
+
+  <table>
+    <caption>Fall Semester 2025</caption>
+
+    <colgroup>
+      <col span="1">
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">8-10 AM</th>
+        <th scope="col">10-12 PM</th>
+        <th scope="col">12-2 PM</th>
+        <th scope="col">2-4 PM</th>
+        <th scope="col">4-6 PM</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Monday</th>
+        <td>Math</td>
+        <td>Physics</td>
+        <td rowspan="2">Lab</td>
+        <td>Break</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td>Computer Science</td>
+        <td>Chemistry</td>
+        <td>Break</td>
+        <td>History</td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td colspan="2">Workshop</td>
+        <td>Break</td>
+        <td>Math</td>
+        <td>Sports</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="6">* Timetable subject to change</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
